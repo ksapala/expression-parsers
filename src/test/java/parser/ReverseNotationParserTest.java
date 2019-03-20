@@ -21,10 +21,10 @@ public class ReverseNotationParserTest {
         String expression = "34+";
 
         // when
-        int expected = this.parser.parse(expression);
+        int actual = this.parser.parse(expression);
 
         // then
-        assertEquals(7, expected);
+        assertEquals(7, actual);
     }
 
     @Test
@@ -33,9 +33,9 @@ public class ReverseNotationParserTest {
         String expression = "1239+5-*+";
 
         // when
-        int expected = this.parser.parse(expression);
+        int actual = this.parser.parse(expression);
 
         // then
-        assertEquals(15, expected);
+        assertEquals(15, actual);
     }
 }
